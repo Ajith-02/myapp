@@ -135,9 +135,9 @@ function Movie({name, rating, summary, poster}){
     <Counter/>
     <button onClick={() => setShow(!show)} className="movie-show-button"> {show ? "Hide" : "show"} Description</button>
     {/*conditional rendering*/}
-    {show ? <p className="movie-summary">{summary}</p> : ""}
-    {/*or below*/}
-    {/*<p style={summaryStyles} className="movie-summary">{summary}</p>*/}
+    {/*show ? <p className="movie-summary">{summary}</p> : ""*/}
+    {/*or above*/}
+    <p style={summaryStyles} className="movie-summary">{summary}</p>
     
     </div>
   )
